@@ -10,10 +10,10 @@ export class ApplePaymentProvider implements PaymentProvider {
     }
 
     capture(transactionId: string): void {
-        console.log(`[Apple] Capturing transaction with ID: ${transactionId}`);
+        console.log(`[Apple] Capturing transaction ${transactionId}`);
     }
 
     refund(transactionId: string): void {
-        console.log(`[Apple] Refunding transaction with ID: ${transactionId}`);
+        console.log(`[Apple] Refunding transaction ${transactionId}`);
     }
 }

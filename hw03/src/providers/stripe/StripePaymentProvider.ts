@@ -10,10 +10,10 @@ export class StripePaymentProvider implements PaymentProvider {
     }
     
     capture(transactionId: string): void {
-        console.log(`[Stripe] Capturing transaction with ID: ${transactionId}`);
+        console.log(`[Stripe] Capturing transaction ${transactionId}`);
     }
 
     refund(transactionId: string): void {
-        console.log(`[Stripe] Refunding transaction with ID: ${transactionId}`);
+        console.log(`[Stripe] Refunding transaction ${transactionId}`);
     }
 }
